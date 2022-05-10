@@ -1,7 +1,15 @@
+import bgPicture from './../../assets/about-bg-picture.png';
+import './../../styles/picturesection.scss';
+
 function About() {
     return (
         <div>
-            <h1>Page A Propos!!!!!</h1>
+            <section className="img-box">
+                <div className="black-bg">
+                    <img src={bgPicture} alt="" />
+                </div>
+
+            </section>
         </div>
     );
 }

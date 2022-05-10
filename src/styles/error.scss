@@ -1,0 +1,25 @@
+$primaryColor: #ff6060;
+.error {
+    width: 90%;
+    margin: 0 auto;
+    color: $primaryColor;
+    &-code {
+        font-weight: 700;
+        font-size: 96px;
+        text-align: center;
+    }
+    &-description {
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+    }
+    &-link-home {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 auto;
+        a {
+            color: $primaryColor;
+        }
+    }
+}
