@@ -50,7 +50,8 @@ $primaryColor: #ff6060;
             max-width: 300px;
         }
 
-        a {
+        .accueil-link,
+        .about-link {
             color: $primaryColor;
             text-decoration: none;
             font-size: 12px;
@@ -63,8 +64,23 @@ $primaryColor: #ff6060;
                 font-size: 24px;
             }
         }
-        a:hover {
+        .accueil-link,
+        .about-link:hover {
+            text-decoration: none;
+        }
+        .accueil-visited,
+        .about-visited {
             text-decoration: underline;
+            color: $primaryColor;
+            font-size: 12px;
+            font-weight: 500;
+            @media (min-width: 600px) {
+                font-size: 18px;
+            }
+
+            @media (min-width: 1000px) {
+                font-size: 24px;
+            }
         }
     }
 }

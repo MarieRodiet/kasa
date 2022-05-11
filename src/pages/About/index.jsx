@@ -1,5 +1,6 @@
 import bgPicture from './../../assets/about-bg-picture.png';
 import './../../styles/picturesection.scss';
+import AboutSection from '../../components/AboutSection';
 
 function About() {
     return (
@@ -8,8 +9,8 @@ function About() {
                 <div className="black-bg">
                     <img src={bgPicture} alt="" />
                 </div>
-
             </section>
+            <AboutSection />
         </div>
     );
 }
