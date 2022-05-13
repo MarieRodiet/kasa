@@ -5,7 +5,7 @@ function RentalTags({ tags }) {
         <div className="rental-page-container-tags-container">
             {tags &&
                 tags.length > 0 &&
-                tags.map((item) => <span key={item}>TAG</span>)}
+                tags.map((item) => <div className="tag" key={item}>{item}</div>)}
         </div>
     );
 }

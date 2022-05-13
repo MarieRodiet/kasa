@@ -5,9 +5,10 @@ function RentalFragment({ title, id }) {
     return (
         <div className="rental-section-fragment">
             <Link to={`/${id}`}>
-                <h2>{title}</h2>
                 <div className="primaryColor-box"></div>
+                <div className="gradient-box"></div>
             </Link>
+            <h2 className="rental-section-fragment-title">{title}</h2>
         </div>
     );
 }

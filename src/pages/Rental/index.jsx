@@ -43,6 +43,90 @@ function Rental() {
             <div className="rental-page-container-tags">
                 <RentalTags tags={data.tags} />
             </div>
+            <div className="rental-page-container-owner">
+                <div className="rental-page-container-owner-stars">
+                    <div className="star-container">
+                        <svg
+                            className="star-svg"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                className="svg-path"
+                                d="M9.8225 6.5L8 0.5L6.1775 6.5H0.5L5.135 9.8075L3.3725 15.5L8 11.9825L12.635 15.5L10.8725 9.8075L15.5 6.5H9.8225Z"
+                                fill="#FF6060"
+                            />
+                        </svg>
+                    </div>
+                    <div className="star-container">
+                        <svg
+                            className="star-svg"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                className="svg-path"
+                                d="M9.8225 6.5L8 0.5L6.1775 6.5H0.5L5.135 9.8075L3.3725 15.5L8 11.9825L12.635 15.5L10.8725 9.8075L15.5 6.5H9.8225Z"
+                                fill="#FF6060"
+                            />
+                        </svg>
+                    </div>
+                    <div className="star-container">
+                        <svg
+                            className="star-svg"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                className="svg-path"
+                                d="M9.8225 6.5L8 0.5L6.1775 6.5H0.5L5.135 9.8075L3.3725 15.5L8 11.9825L12.635 15.5L10.8725 9.8075L15.5 6.5H9.8225Z"
+                                fill="#FF6060"
+                            />
+                        </svg>
+                    </div>
+                    <div className="star-container">
+                        <svg
+                            className="star-svg"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                className="svg-path"
+                                d="M9.8225 6.5L8 0.5L6.1775 6.5H0.5L5.135 9.8075L3.3725 15.5L8 11.9825L12.635 15.5L10.8725 9.8075L15.5 6.5H9.8225Z"
+                                fill="#FF6060"
+                            />
+                        </svg>
+                    </div>
+                    <div className="star-container">
+                        <svg
+                            className="star-svg"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                className="svg-path"
+                                d="M9.8225 6.5L8 0.5L6.1775 6.5H0.5L5.135 9.8075L3.3725 15.5L8 11.9825L12.635 15.5L10.8725 9.8075L15.5 6.5H9.8225Z"
+                                fill="#FF6060"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div className="rental-page-container-owner-info">
+                    <p className="rental-page-container-owner-info-name">
+                        name
+                    </p>
+                    <img
+                        className="rental-page-container-owner-info-picture"
+                        src={data.host['picture']}
+                        alt="host"
+                    />
+                </div>
+            </div>
         </div>
     );
 }

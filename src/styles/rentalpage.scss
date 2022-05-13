@@ -27,17 +27,47 @@ $primaryColor: #ff6060;
             font-size: 14px;
         }
     }
-    &-tags {
+    &-tags-container {
         padding: 10px 0;
-        height: 30px;
+        height: fit-content;
         width: 335px;
+        display: flex;
 
-        span {
+        .tag {
             font-size: 10px;
             color: white;
             border-radius: 5px;
-            padding-right: 5px;
+            margin-right: 5px;
             background-color: $primaryColor;
+            height: 19px;
+            text-align: center;
+            padding-top: 3px;
+            width: 84px;
+        }
+    }
+    &-owner {
+        width: 100%;
+        display: flex;
+        &-stars {
+            display: flex;
+            flex-direction: row;
+            width: 70px;
+            height: 30px;
+            background-color: yellow;
+
+            .star-container{
+                width: 15px;
+                height: 15px;
+            }
+        }
+        &-info{
+            display: flex;
+            &-name{
+                color: $primaryColor
+            }
+            &-picture{
+                border-radius: 10px;
+            }
         }
     }
 }
