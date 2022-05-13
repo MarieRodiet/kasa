@@ -1,4 +1,6 @@
 import AboutFragment from '../AboutFragment';
+import about from './../../styles/about.scss';
+
 function AboutSection() {
     const aboutInfo = [
         {
@@ -23,11 +25,14 @@ function AboutSection() {
         },
     ];
 
-
     return (
-        <div>
+        <div className="about">
             {aboutInfo.map((element) => (
-                <AboutFragment props={element} key={element.title} />
+                <AboutFragment
+                    title={element.title}
+                    description={element.description}
+                    key={element.title}
+                />
             ))}
         </div>
     );
