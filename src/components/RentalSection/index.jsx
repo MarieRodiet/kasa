@@ -1,26 +1,26 @@
 import { useState, useEffect } from 'react';
-import RentalFragment from "./../RentalFragment";
+import RentalFragment from './../RentalFragment';
 import './../../styles/rentalsection.scss';
 function RentalSection() {
-        const [data, setData] = useState([]);
-        const getData = () => {
-            fetch('./../data/data.json', {
-                headers: {
-                    'Content-Type': 'application/json',
-                    Accept: 'application/json',
-                },
+    const [data, setData] = useState([]);
+    function getData () {
+        fetch('./../data/data.json', {
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
+            },
+        })
+            .then(function (response) {
+                return response.json();
             })
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (myJson) {
-                    setData(myJson);
-                });
-        };
+            .then(function (myJson) {
+                setData(myJson);
+            });
+    };
 
-        useEffect(() => {
-            getData();
-        }, []);
+    useEffect(() => {
+        getData();
+    }, []);
     return (
         <div className="rental-section">
             {data &&

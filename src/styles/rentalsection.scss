@@ -1,4 +1,5 @@
 $primaryColor: #ff6060;
+
 .rental-section {
     width: 87%;
     min-width: 315px;
@@ -20,6 +21,7 @@ $primaryColor: #ff6060;
     }
 
     &-fragment {
+        cursor: pointer;
         position: relative;
         top: 0px;
         bottom: 0px;
@@ -49,6 +51,7 @@ $primaryColor: #ff6060;
                 text-align: center;
             }
             h2 {
+                cursor: pointer;
                 transform: translate(10px, 200px);
                 font-weight: 500;
                 font-size: 18px;
@@ -56,15 +59,15 @@ $primaryColor: #ff6060;
                     transform: translate(0px, 260px);
                 }
             }
-        }
-        .primaryColor-box {
-            position: absolute;
-            top: 0;
-            background-color: $primaryColor;
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
+            .primaryColor-box {
+                position: absolute;
+                top: 0;
+                background-color: $primaryColor;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
         }
     }
 }
