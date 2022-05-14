@@ -17,6 +17,7 @@ $primaryColor: #ff6060;
         flex-direction: column;
         color: $primaryColor;
         font-size: 500;
+        padding-top: 15px;
         &-title {
             font-size: 18px;
             font-size: 500;
@@ -46,27 +47,35 @@ $primaryColor: #ff6060;
         }
     }
     &-owner {
-        width: 100%;
+        margin: 20px;
+        width: 335px;
         display: flex;
+        height: 35px;
+        justify-content: space-between;
+        align-items: center;
         &-stars {
             display: flex;
             flex-direction: row;
             width: 70px;
             height: 30px;
-            background-color: yellow;
 
-            .star-container{
+            .star-container {
                 width: 15px;
                 height: 15px;
             }
         }
-        &-info{
+        &-info {
+
             display: flex;
-            &-name{
-                color: $primaryColor
+            align-items: center;
+            &-name {
+                color: $primaryColor;
             }
-            &-picture{
-                border-radius: 10px;
+            &-picture {
+                border-radius: 32px;
+                height: 32px;
+                width: 32px;
+                background: #c4c4c4;
             }
         }
     }

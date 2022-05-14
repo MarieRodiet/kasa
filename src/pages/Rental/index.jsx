@@ -1,13 +1,16 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './../../styles/rentalpage.scss';
+//import RentalContent from '../../components/RentalContent';
+import Loader from '../../components/Loader';
 import RentalTags from '../../components/RentalTags';
 
 function Rental() {
     const { id } = useParams();
-
+    const [isLoading, updateLoading] = useState(false);
     const [data, setData] = useState([]);
     function getData() {
+        updateLoading(true);
         fetch('./../data/data.json', {
             headers: {
                 'Content-Type': 'application/json',
@@ -19,6 +22,7 @@ function Rental() {
             })
             .then(function (myJson) {
                 let found = myJson.find((element) => element.id === id);
+                updateLoading(false);
                 setData(found);
             });
     }
@@ -27,7 +31,9 @@ function Rental() {
         getData();
     });
 
-    return (
+    return { isLoading } ? (
+        <Loader />
+    ) : (
         <div className="rental-page-container">
             <img
                 className="rental-page-container-cover"
@@ -118,13 +124,14 @@ function Rental() {
                 </div>
                 <div className="rental-page-container-owner-info">
                     <p className="rental-page-container-owner-info-name">
-                        name
+                        {data.host['name']}
                     </p>
-                    <img
+                    <div className="rental-page-container-owner-info-picture"></div>
+                    {/* <img
                         className="rental-page-container-owner-info-picture"
                         src={data.host['picture']}
                         alt="host"
-                    />
+                    /> */}
                 </div>
             </div>
         </div>
