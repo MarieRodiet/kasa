@@ -31,6 +31,7 @@ function RentalSection() {
                         key={item.id}
                         title={item.title}
                         id={item.id}
+                        cover={item.cover}
                     />
                 ))}
         </div>

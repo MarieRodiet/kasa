@@ -1,20 +1,19 @@
 import RentalTags from './../RentalTags';
 import './../../styles/rentalpage.scss';
+import './../../styles/carousel.scss';
 import { useState } from 'react';
 import Host from '../Host';
 import Equipments from '../Equipments';
 import Stars from '../Stars';
+import Carousel from '../Carousel';
+
 
 function RentalContent({ data }) {
     const [toggledDescription, setToggleDescription] = useState(true);
     const [toggledEquipment, setToggleEquipment] = useState(true);
     return (
         <div className="rental-page-container">
-            <img
-                className="rental-page-container-cover"
-                alt="couverture de la location"
-                src={data.cover}
-            />
+            <Carousel pictures={data.pictures} />
             <div className="rental-page-container-info">
                 <div className="rental-page-container-info-rental">
                     <p className="rental-page-container-info-rental-title">
@@ -31,7 +30,6 @@ function RentalContent({ data }) {
 
             <div className="rental-page-container-owner">
                 <div className="rental-page-container-owner-stars">
-                    {' '}
                     {data.rating ? (
                         <Stars rating={data.rating} />
                     ) : (

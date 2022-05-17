@@ -1,0 +1,54 @@
+.rental-page-container-cover {
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    &-previousArrow {
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        top: 122px;
+        left: 2%;
+        transform: rotate(180deg);
+        cursor: pointer;
+        @media (min-width: 600px) {
+            width: 22px;
+            height: 32px;
+        }
+        @media (min-width: 1200px) {
+            width: 45px;
+            height: 80px;
+        }
+    }
+    &-currentPic {
+        width: 100%;
+        min-width: 315px;
+        height: 255px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    &-nextArrow {
+        cursor: pointer;
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        top: 120px;
+        right: 2%;
+        @media (min-width: 600px) {
+            width: 22px;
+            height: 32px;
+        }
+        @media (min-width: 1200px) {
+            width: 45px;
+            height: 80px;
+        }
+    }
+
+    @media (min-width: 600px) {
+        margin: 0 auto;
+    }
+}

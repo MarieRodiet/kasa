@@ -45,13 +45,10 @@ $primaryColor: #ff6060;
             height: 255px;
             text-decoration: none;
             color: white;
-            @media (min-width: 600px) {
-                text-align: center;
-            }
-            .primaryColor-box {
+            .rental-section-fragment-cover {
                 position: absolute;
                 top: 0;
-                background-color: $primaryColor;
+                object-fit: cover;
                 width: 100%;
                 height: 100%;
                 border-radius: 10px;
