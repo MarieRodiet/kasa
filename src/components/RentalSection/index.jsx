@@ -21,6 +21,7 @@ function RentalSection() {
     useEffect(() => {
         getData();
     }, []);
+
     return (
         <div className="rental-section">
             {data &&
