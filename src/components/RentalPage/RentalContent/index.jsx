@@ -1,6 +1,6 @@
-import RentalTags from './../RentalTags';
-import './../../styles/rentalpage.scss';
-import './../../styles/carousel.scss';
+import RentalTags from '../RentalTags';
+import './../../../styles/RentalPage/rentalpage.scss';
+import './../../../styles/RentalPage/carousel.scss';
 import { useState } from 'react';
 import Host from '../Host';
 import Equipments from '../Equipments';

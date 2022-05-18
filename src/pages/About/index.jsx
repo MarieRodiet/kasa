@@ -1,6 +1,6 @@
 import bgPicture from './../../assets/about-bg-picture.png';
-import './../../styles/picturesection.scss';
-import AboutSection from '../../components/AboutSection';
+import './../../styles/HomePage/picturesection.scss';
+import AboutSection from '../../components/AboutPage/AboutSection';
 
 function About() {
     return (

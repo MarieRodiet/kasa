@@ -1,4 +1,4 @@
-import './../../styles/rentalpage.scss';
+import './../../../styles/RentalPage/rentalpage.scss';
 
 function RentalTags({ tags }) {
     return (

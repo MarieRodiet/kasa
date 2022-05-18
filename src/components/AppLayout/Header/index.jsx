@@ -1,5 +1,5 @@
-import logo from './../../assets/logo.png';
-import './../../styles/header.scss';
+import logo from './../../../assets/logo.png';
+import './../../../styles/AppLayout/header.scss';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import bgPicture from './../../assets/home-bg-picture.png';
-import './../../styles/picturesection.scss';
-import RentalSection from '../../components/RentalSection';
+import './../../styles/HomePage/picturesection.scss';
+import RentalSection from '../../components/HomePage/RentalSection';
 
 function Home() {
 

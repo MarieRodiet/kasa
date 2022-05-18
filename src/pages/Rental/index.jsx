@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import './../../styles/rentalpage.scss';
-import RentalContent from '../../components/RentalContent';
+import './../../styles/RentalPage/rentalpage.scss';
+import RentalContent from '../../components/RentalPage/RentalContent';
 
 function Rental() {
     const { id } = useParams();
@@ -21,8 +21,8 @@ function Rental() {
                 setData(myJson.find((element) => element.id === id));
             } catch (err) {
                 setError(true);
-                console.log(err);
             } finally {
+                console.log("the data is loaded")
             }
         }
         getRental();

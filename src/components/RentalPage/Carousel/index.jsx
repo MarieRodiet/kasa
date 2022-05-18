@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import './../../styles/carousel.scss';
+import { useState } from 'react';
+import './../../../styles/RentalPage/carousel.scss';
 
 function Carousel({ pictures }) {
     const pics = [

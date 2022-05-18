@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './../../styles/rentalsection.scss';
+import './../../../styles/HomePage/rentalsection.scss';
 
 function RentalFragment({ title, id, cover }) {
     return (

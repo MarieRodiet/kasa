@@ -1,4 +1,4 @@
-import './../../styles/rentalpage.scss';
+import './../../../styles/RentalPage/rentalpage.scss';
 
 function Stars({ rating }) {
     let nbOfRed = parseInt({ rating }.rating);

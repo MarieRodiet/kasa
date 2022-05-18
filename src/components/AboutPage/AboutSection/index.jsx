@@ -1,5 +1,5 @@
 import AboutFragment from '../AboutFragment';
-import about from './../../styles/about.scss';
+import './../../../styles/AboutPage/about.scss';
 
 function AboutSection() {
     const aboutInfo = [
