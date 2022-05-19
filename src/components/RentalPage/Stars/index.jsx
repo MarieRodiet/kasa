@@ -1,11 +1,14 @@
 import './../../../styles/RentalPage/rentalpage.scss';
-
+/**
+ * 
+ * @param {rating} param0 
+ * @returns html element
+ */
 function Stars({ rating }) {
     let nbOfRed = parseInt({ rating }.rating);
     let arrayRed = new Array(nbOfRed).fill('RED');
     let arrayGray = new Array(5 - nbOfRed).fill('NOPE');
     let stars = [...arrayRed, ...arrayGray];
-
     return stars.map((element, index) =>
         element === 'RED' ? (
             <div

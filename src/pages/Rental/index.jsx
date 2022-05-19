@@ -2,7 +2,11 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './../../styles/RentalPage/rentalpage.scss';
 import RentalContent from '../../components/RentalPage/RentalContent';
-
+import Error from '../Error';
+/**
+ *
+ * @returns
+ */
 function Rental() {
     const { id } = useParams();
     const [isError, setError] = useState(false);
@@ -21,8 +25,9 @@ function Rental() {
                 setData(myJson.find((element) => element.id === id));
             } catch (err) {
                 setError(true);
+                console.log('there is an error: ' + err);
             } finally {
-                console.log("the data is loaded")
+                console.log('the data is loaded');
             }
         }
         getRental();
@@ -31,7 +36,7 @@ function Rental() {
     if (isError) {
         return <span>Oups, il y a eu un probleme</span>;
     }
-    return <RentalContent data={data} />;
+    return <div>{data ? <RentalContent data={data} /> : <Error />}</div>;
 }
 
 export default Rental;

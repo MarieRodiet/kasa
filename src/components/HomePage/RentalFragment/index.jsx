@@ -4,7 +4,7 @@ import './../../../styles/HomePage/rentalsection.scss';
 function RentalFragment({ title, id, cover }) {
     return (
         <div className="rental-section-fragment">
-            <Link to={`/${id}`}>
+            <Link to={`/rental/${id}`}>
                 <img
                     className="rental-section-fragment-cover"
                     alt="couverture de la location"

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './../../../styles/RentalPage/carousel.scss';
 
 function Carousel({ pictures }) {
+    console.log(pictures);
     const pics = [
         'https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg',
         'https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg',
@@ -10,7 +11,7 @@ function Carousel({ pictures }) {
         'https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg',
     ];
     const [currentPic, setPic] = useState(0);
-    const nbOfPics = pics.length - 1;
+    const nbOfPics = pictures?.length - 1;
     return (
         <div className="rental-page-container-cover">
             <div
@@ -30,11 +31,14 @@ function Carousel({ pictures }) {
                     />
                 </svg>
             </div>
-            <img
-                className="rental-page-container-cover-currentPic"
-                alt="couverture de la location"
-                src={pics[currentPic]}
-            />
+            {pictures ? (
+                <img
+                    className="rental-page-container-cover-currentPic"
+                    alt="couverture de la location"
+                    src={pictures[currentPic]}
+                />
+            ) : null}
+
             <div
                 className="rental-page-container-cover-nextArrow"
                 onClick={() =>
