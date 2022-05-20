@@ -3,6 +3,10 @@ import './../../../styles/AppLayout/header.scss';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
+/**
+ * 
+ * @returns Header
+ */
 function Header() {
     const location = useLocation();
     return (

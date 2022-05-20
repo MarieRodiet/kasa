@@ -1,6 +1,10 @@
 import './../../../styles/AppLayout/footer.scss';
 import logo from './../../../assets/logo-footer.png';
 
+/**
+ * 
+ * @returns Footer
+ */
 function Footer() {
     return (
         <div className="footer-container">

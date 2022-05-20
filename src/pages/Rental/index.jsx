@@ -3,10 +3,14 @@ import { useState, useEffect } from 'react';
 import './../../styles/RentalPage/rentalpage.scss';
 import RentalContent from '../../components/RentalPage/RentalContent';
 import Error from '../Error';
+
 /**
  *
- * @returns
+ * @returns RENTAL page
+ * fetches data of rental from id in path
+ * data ? <RentalContent data={data} /> : <Error />
  */
+
 function Rental() {
     const { id } = useParams();
     const [isError, setError] = useState(false);
@@ -31,7 +35,7 @@ function Rental() {
             }
         }
         getRental();
-    }, []);
+    }, [id]);
 
     if (isError) {
         return <span>Oups, il y a eu un probleme</span>;

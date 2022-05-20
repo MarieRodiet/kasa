@@ -189,17 +189,22 @@ $white: #ffff;
                 }
             }
 
-            &-description-up {
+            &-description-up,
+            ul {
                 list-style: none;
                 background-color: $secondaryColor;
                 color: $primaryColor;
                 font-size: 12px;
                 font-weight: 400;
+
+                min-height: 115px;
+                height: fit-content;
                 padding: 20px 20px;
                 border-radius: 0 0 5px 5px;
                 @media (min-width: 600px) {
                     font-size: 16px;
                     border-radius: 8px;
+                    min-height: 160px;
                 }
 
                 @media (min-width: 1200px) {

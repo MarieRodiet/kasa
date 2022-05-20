@@ -1,5 +1,17 @@
 import { useState } from 'react';
 
+/**
+ * 
+ * @param {string} title
+ * @param {string} description
+ * @param {boolean} isList
+ * @returns <Collapse
+                className="rental-page-container-boxes-equipement"
+                title="Equipement"
+                description={data.equipments}
+                isList={true}
+            />
+ */
 function Collapse({ title, description, isList }) {
     const [toggled, updateToggle] = useState(true);
     return (

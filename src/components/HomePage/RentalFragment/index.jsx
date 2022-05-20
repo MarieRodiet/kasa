@@ -1,6 +1,17 @@
 import { Link } from 'react-router-dom';
 import './../../../styles/HomePage/rentalsection.scss';
 
+/**
+ * @param {string} title 
+ * @param {number} id
+ * @param {string} cover 
+ * @returns  <RentalFragment
+                key={item.id}
+                title={item.title}
+                id={item.id}
+                cover={item.cover}   
+                />
+ */
 function RentalFragment({ title, id, cover }) {
     return (
         <div className="rental-section-fragment">

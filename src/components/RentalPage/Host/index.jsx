@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {object} host 
+ * @returns <Host host={data.host} /> with {string} name and {string} picture
+ */
 function Host({ host }) {
     return (
         <div className="rental-page-container-owner-info">

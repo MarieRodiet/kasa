@@ -1,18 +1,25 @@
-import RentalTags from '../RentalTags';
 import './../../../styles/RentalPage/rentalpage.scss';
 import './../../../styles/RentalPage/carousel.scss';
-import { useState } from 'react';
 import Host from '../Host';
-import Equipments from '../Equipments';
 import Stars from '../Stars';
-import Carousel from '../Carousel';
+import Gallery from '../Gallery';
 import Collapse from '../../AppLayout/Collapse';
+import RentalTags from '../RentalTags';
 
+/**
+ * 
+ * @param {object} data
+ * @returns <RentalContent data={data} /> containing the following components:
+ * HOST {object} data.host
+ * STARS {number} data.rating
+ * GALLERY {object} data.pictures
+ * COLLAPSE {string} data.description
+ * RENTALTAGS {object} data.tags
+ */
 function RentalContent({ data }) {
-    const [toggledEquipment, setToggleEquipment] = useState(true);
     return (
         <div className="rental-page-container">
-            <Carousel pictures={data.pictures} />
+            <Gallery pictures={data.pictures} />
             <div className="rental-page-container-info">
                 <div className="rental-page-container-info-rental">
                     <p className="rental-page-container-info-rental-title">

@@ -1,14 +1,15 @@
 import './../../../styles/RentalPage/rentalpage.scss';
 /**
- * 
- * @param {rating} param0 
- * @returns html element
+ *
+ * @param {number} rating
+ * @returns 5 svg of stars. number determines how many of the 5 will be RED
+ * The rest will be gray
  */
 function Stars({ rating }) {
     let nbOfRed = parseInt({ rating }.rating);
     let arrayRed = new Array(nbOfRed).fill('RED');
     let arrayGray = new Array(5 - nbOfRed).fill('NOPE');
-    let stars = [...arrayRed, ...arrayGray];
+    let stars = [...arrayGray, ...arrayRed];
     return stars.map((element, index) =>
         element === 'RED' ? (
             <div

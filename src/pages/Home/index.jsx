@@ -2,9 +2,11 @@ import bgPicture from './../../assets/home-bg-picture.png';
 import './../../styles/HomePage/picturesection.scss';
 import RentalSection from '../../components/HomePage/RentalSection';
 
+/**
+ * 
+ * @returns ACCUEIL page
+ */
 function Home() {
-
-
     return (
         <div>
             <section className="img-box">

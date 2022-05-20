@@ -4,6 +4,10 @@ import './../../styles/AppLayout/collapse.scss';
 import './../../styles/HomePage/picturesection.scss';
 import './../../styles/RentalPage/rentalpage.scss';
 
+/**
+ * 
+ * @returns A PROPOS page
+ */
 
 function About() {
     const aboutInfo = [
