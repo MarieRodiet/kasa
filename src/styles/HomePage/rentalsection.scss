@@ -69,12 +69,12 @@ $primaryColor: #ff6060;
         &-title {
             color: white;
             cursor: pointer;
-            transform: translate(15px, -60px);
+            transform: translate(15px, -55px);
             font-weight: 500;
             font-size: 18px;
             @media (min-width: 600px) {
                 cursor: pointer;
-                transform: translate(20px, 0px);
+                transform: translate(20px, 20px);
             }
         }
     }
