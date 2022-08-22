@@ -9,6 +9,7 @@ import { useLocation } from 'react-router-dom';
  */
 function Header() {
     const location = useLocation();
+    console.log(location);
     return (
         <div className="Banner">
             <img id="logo" src={logo} alt="logo Kasa" />
