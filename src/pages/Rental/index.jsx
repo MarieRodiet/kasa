@@ -19,7 +19,7 @@ function Rental() {
     useEffect(() => {
         async function getRental() {
             try {
-                const response = await fetch('./../data/data.json', {
+                const response = await fetch('../data.json', {
                     headers: {
                         'Content-Type': 'application/json',
                         Accept: 'application/json',

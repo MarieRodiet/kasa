@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './styles/AppLayout/index.scss';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,15 +12,15 @@ import Footer from './components/AppLayout/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter basename="/">
             <Header />
             <Routes>
-                <Route path="*" element={<Error />} />
-                <Route path="/" element={<Home />} />
+                <Route exact path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/rental/:id" element={<Rental />} />
+                <Route path="*" element={<Error />} />
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>
 );
