@@ -1,5 +1,6 @@
 {
     "name": "kasa",
+    "homepage": "https://marierodiet.github.io/kasa",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -20,7 +21,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
+        "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -41,6 +44,7 @@
         ]
     },
     "devDependencies": {
+        "gh-pages": "^4.0.0",
         "prettier": "2.6.2"
     }
 }
